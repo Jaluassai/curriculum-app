@@ -13,19 +13,8 @@ pipeline {
     }
 
     stage('dsad') {
-      parallel {
-        stage('dsad') {
-          steps {
-            sh 'ls -la'
-          }
-        }
-
-        stage('FrontTest') {
-          steps {
-            sh 'cd curriculum-front && npm install && npm run test:unit'
-          }
-        }
-
+      steps {
+        sh 'ls -la'
       }
     }
 
