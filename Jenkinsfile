@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('dsad') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
