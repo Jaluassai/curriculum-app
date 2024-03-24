@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    node {
-      label 'alpine'
+    docker {
+      image 'node:lts-alpine'
     }
 
   }
